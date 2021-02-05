@@ -1,5 +1,7 @@
 # apio
 
+Ett kort exempel på hur man kan konsumera api:er i Vue. En branch (main) för att hämta produkter, och en branch för att hämta växlingskurser från ECB.
+
 ## Project setup
 ```
 npm install
@@ -9,16 +11,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
