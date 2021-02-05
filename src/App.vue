@@ -15,7 +15,7 @@ export default {
   },
   data() {
     return {
-      url: "https://www.hulabeck.se/hdtml/temp/products.json",
+      url: "https://www.hulabeck.se/html/temp/products.json",
       // Kontrollera alltid din datakälla, helst visuellt.
       products: null,
     };
