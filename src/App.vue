@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <List :products="products" />
+    <List :ratesobject="ratesObject" />
   </div>
 </template>
 
@@ -15,9 +15,9 @@ export default {
   },
   data() {
     return {
-      url: "https://www.hulabeck.se/hdtml/temp/products.json",
+      url: "https://api.exchangeratesapi.io/latest",
       // Kontrollera alltid din datakälla, helst visuellt.
-      products: null,
+      ratesObject: null,
     };
   },
   mounted() {
@@ -25,7 +25,7 @@ export default {
     axios
       .get(this.url)
       .then((response) => {
-        this.products = response.data.products;
+        this.ratesObject = response.data;
       })
       .catch((error) => {
         console.error("Fel:" + error);
